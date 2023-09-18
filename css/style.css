@@ -1,0 +1,539 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+/* ******************** html element styling******************** */
+html{
+    font-size: 62.5%;
+}
+body{
+    /* font-family:'calibiri'; */
+}
+/* ********************** header *************************** */
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0,0, 0.5) , rgba(0, 0, 0, 0.5)) , url('../img/img1.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ########################## navbar ############################## */
+
+.navbar{
+    /*overflow: auto; this is used to fix the problem of float property*/
+    padding: 1.5rem;
+     display: flex;
+    justify-content: space-between; 
+} 
+
+.logo{
+    background: url('../img/img2.JPG');
+    height: 6.0rem;
+    width: 6.0rem;
+    border-radius: 3.0rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 2; 
+    display: block;
+}
+ nav ul li{
+   
+    list-style: none;
+    display: inline-block;
+ } 
+ul{
+    display: block;
+    list-style: none;
+    margin-top: 1.4em;
+}
+.nav-item{
+    text-transform: uppercase;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 0rem 1rem;
+    letter-spacing: 0.11em;
+}
+.navbar a:link,
+.navbar a:visited{
+    color: white;
+}
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ utility classes @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.container
+{   
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+} 
+.text-light{
+    color: whitesmoke;
+}
+.fontsize{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background-color: #fff;
+    border-radius: 100px;
+}
+.text-red{
+    color: red;
+}
+.md-heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.btn-secondary{
+    border: 2px solid #e63946;
+    color: #e63946;
+    border-radius: 1.5em;
+    background:#fff;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+p{
+    font-size: 2rem;
+}
+.bg-dark{
+    background-color: #263238;
+}
+/* ################################## HEADER STYLING ################################ */
+h1{
+    color: white;
+    margin-bottom: 0.5em;
+}
+.center-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.2) rgba(rgba(0,0,0,.2 )));
+}
+/* ##########################  showcase section styling ######################## */
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    display: flex;
+    height: 350px;
+    background: #fff;
+    box-shadow: 45px /*x-axis(horizontal ofset)*/ 32px /*y-axis(vertical ofset)*/ 20px/*blur*/ 0px /*spread*/ #aaa/*colour*/ ;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.embed-box{
+    width: 50%;
+    object-fit: cover;
+}
+.text-box{
+    width: 50%;
+    padding: 3rem;
+}
+.showcase .container h2{
+    margin-bottom: 0.5rem;
+}
+h2{
+    display: inline-block;
+    padding: 0.5em;
+}
+.text-box p{
+    margin-top: 0.5em;
+}
+.text-box a{
+    display: inline-block;
+    margin-top: 1.5em;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SKILL SECTION STYLING @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.skills{
+    padding: 10rem 0;
+}
+.box-wrapper:hover{
+    cursor: default;
+}
+.box-wrapper{
+    display: flex;
+    box-shadow: 10px 12px 10px 0px rgb(0 0 0 / 51%);
+}
+.box{
+    width: 33.3333333%;
+    padding: 2rem;
+    text-align: center;
+}
+.box1,.box3{
+    background-color: #263238;
+    color: #fff;
+}
+.box2{
+    background-image: linear-gradient(25deg,#d64c758f,#ee4758 50%); /*source from internet */
+    color: #fff;
+}
+.img1{
+    height: 50px;
+    width: 50px;
+}
+/* ##################################### FOOTER STYLING ################################################## */
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons img{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    padding: 0.5rem;
+    margin: 2rem;
+}
+.footer{
+    background-color: #263238;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 2rem;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ ABOUT US PAGE STYLING @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ .about{
+    padding: 5rem 0;
+ }
+
+.about-me{
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.about-me::after{
+    display: block;
+  content: "";
+  border-top: 5px solid #e63946;
+  border-radius: 5px;
+  width: 100%;
+}
+.listbox{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.listbox ul li::before{
+    content: "\263A";
+    color:#e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.counts{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 3rem;
+}
+.count-item span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ee4758;
+}
+.count-item p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+.abt-banner{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(25deg,#d64c758f,#ee4758 50%);
+    padding: 2rem;
+    box-shadow: 5px 5px 10px #00000057;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.abt-banner a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    padding: 0.5rem 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    display: block;
+}
+.abt-banner .txt{
+    letter-spacing: 0.4rem;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+/* ################################### contact page styling ################################################# */
+ .contact-form{
+    padding: 5rem 0;
+    background-color: #f7f7f7f7;
+ }
+ .form-wrapper{
+    display: flex;
+    justify-content: space-around;
+ }
+ .form-wrapper .my-address{
+
+    width: 49%;
+    background:#fff;
+    padding: 1rem;
+    height: 760px;
+ }
+
+.form-wrapper .my-address h2{
+    display: inline-block;
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+
+
+.form-wrapper .my-address img{
+    max-width: 95%;
+    max-height: 60%;
+   max-height: 50%;
+    min-height: 50%;
+    object-fit: cover;
+ }
+ .my-address .icons{
+    margin-left: 0.5rem;
+    min-width: 2.2rem;
+    height: 2.2rem;
+ }
+ .my-address p{
+    padding: 1rem;
+ }
+ .form-wrapper .address-group{
+     margin-bottom: 3rem;
+    }
+    /* ####################################################### FORM STYLING ################################### */
+    .form-wrapper .form{
+        height: 760px;
+        font-size: 1.7rem;
+       width: 49%;
+       background:#fff;
+       padding: 1rem;
+    }
+    .form h1::after{
+        display: block;
+      content: "";
+      border-top: 5px solid #e63946;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .form-wrapper .form label{
+        display: block;
+    } 
+    .form-wrapper .form input{
+        padding: 0.5rem;
+        width:100%;
+    }
+    .form-wrapper .form .form-group{
+        margin-bottom: 1.2rem;
+    }
+    
+    .form-wrapper .form label::after{
+        content: '*';
+        color: #e63946;
+    }
+   .form-wrapper .form textarea{
+    width: 100%;
+    height: 320px;
+    padding: 1rem;
+   }
+  .form-wrapper .form button{
+    display: block;
+    padding: 0.5em 3em;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  /* ########################################  MEDIA QUERY ########################################## */
+  @media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+  .center-main .center-heading{
+    display: none;
+  }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    .navbar .nav-item a{
+         padding: 0.1rem 0.1rem;
+         margin: 0rem 0.7rem;
+        letter-spacing: 0rem;
+    }
+    .row {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+     .row2 .embed-box{
+        order: -1;
+        width: 100%;
+
+    }
+    .row1 .embed-box{
+        width: 100%;
+    }
+    .row1 .text-box, .row2 .text-box{
+        width: 100%;
+        text-align: center;
+    }
+    .skills .box-wrapper{
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .skills .box-wrapper .box{
+        width: 100%;
+        text-align: center;
+        margin-top: 6rem;
+        box-shadow: 10px 12px 10px 0px rgb(0 0 0 / 51%);
+    }
+    .abt-banner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .abt-banner .contact,.abt-banner .txt{
+        padding: 2rem;
+    }
+    .abt-banner a{
+        display: block;
+    }
+    .form-wrapper{
+        flex-direction: column;
+    }
+    .form-wrapper .my-address, .form-wrapper .form{
+        width: 100%;
+        height: auto;
+    }
+    .form-wrapper .form{
+        margin-top: 1.5rem;
+    }
+}
+@media (min-width: 501px) and (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    .navbar .nav-item a{
+         padding: 0.1rem 0.1rem;
+         margin: 0rem 0.7rem;
+        letter-spacing: 0rem;
+    }
+    .row {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+     .row2 .embed-box{
+        order: -1;
+        width: 100%;
+
+    }
+    .row1 .embed-box{
+        width: 100%;
+    }
+    .row1 .text-box, .row2 .text-box{
+        width: 100%;
+        text-align: center;
+    }
+    .skills .box-wrapper{
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .skills .box-wrapper .box{
+        width: 100%;
+        text-align: center;
+        margin-top: 6rem;
+        box-shadow: 10px 12px 10px 0px rgb(0 0 0 / 51%);
+    }
+    .abt-banner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .abt-banner .contact,.abt-banner .txt{
+        padding: 2rem;
+    }
+    .abt-banner a{
+        display: block;
+    }
+    .form-wrapper{
+        flex-direction: column;
+    }
+    .form-wrapper .my-address, .form-wrapper .form{
+        width: 100%;
+        height: auto;
+    }
+    .form-wrapper .form{
+        margin-top: 1.5rem;
+    }
+}
+@media (min-width:769px) and (max-width:1200px){
+    html{
+        font-size: 56.25%;
+    }
+}
+    @media(orientation: landscape) and (max-height:500px) { 
+        .header{
+            height: 90vmax;
+        }
+    }
